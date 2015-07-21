@@ -1,162 +1,39 @@
 <template name="MasterLayout">
 
-          <!-- BACKGROUND -->
-          <img src="/images/background-1.jpg" class="background" alt="" />
-          <!-- /BACKGROUND -->
+  {{> navBar}}
 
-          <!-- LOGO -->
-          <div class="header">
-              <h1>
-                  <a data-scroll="scrollto"  href="#start">
-                      <img src="/images/headerlogo.png" height="32" width="35" class="header-logo" alt=""/>
-                      MemorySocial
-                  </a>
-              </h1>
-          </div>
-          <!-- /LOGO -->
+  {{> yield}}
 
 
-          <!-- MAIN CONTENT SECTION -->
-          <section id="content">
+</template>
 
-              <!-- SECTION -->
-              <section class="clearfix section" id="start">
 
-                  <!-- SECTION TITLE -->
-                  <h3 class="block-title">Welcome</h3>
-                  <!-- /SECTION TITLE -->
 
-                  <!-- SECTION TILES -->
-                  <div class="tile turquoise w2 h1 title-horizontalcenter icon-scaleuprotate360cw">
-                      <a class="link" href="http://themeforest.net/item/metromega-responsive-html5-metro-template/5497931?ref=grozavcom">
-                          <i class="fa fa-cloud-download"></i>
-                          <p class="title">Buy Template</p>
-                      </a>
-                  </div>
 
-                  <div class="tile orange w2 h1 icon-featurecw title-fadeout">
-                      <a data-scroll="scrollto"  href="#about" class="link">
-                          <i class="fa fa-user"></i>
-                          <p class="title">About</p>
-                      </a>
-                  </div>
-
-                  <div class="tile blue title-verticalcenter icon-flip w2 h1">
-                      <a class="link" data-scroll="scrollto"  href="#portfolio">
-                          <i class="fa fa-picture-o"></i>
-                          <p class="title">Portfolio</p>
-                      </a>
-                  </div>
-
-                  <div class="tile purple title-scaleup icon-scaledownrotate360cw w2 h1">
-                      <a class="link" data-scroll="scrollto"  href="#contactform">
-                          <i class="fa fa-envelope"></i>
-                          <p class="title">Contact</p>
-                      </a>
-                  </div>
-
-                  <div class="tile green icon-featurefade title-indent w1 h1">
-                      <a class="link" href="features.html" target="_blank">
-                          <i class="fa fa-tasks"></i>
-                          <p class="title">Features</p>
-                      </a>
-                  </div>
-
-                  <div class="tile blue icon-flip title-fadeout w1 h1">
-                      <a class="link" data-scroll="scrollto"  href="#services">
-                          <i class="fa fa-pencil"></i>
-                          <p class="title">Our Services</p>
-                      </a>
-                  </div>
-
-                  <div class="tile imagetile title-indent tileshow w2 h1">
-                      <div class="slide active">
-                          <a href="#galleryimage" data-lightbox="mlightboximage" class="link"
-                             data-src="img/01_preview.jpg" data-title="Generic" data-description="by PierreBorodin">
-                              <img src="img/01_thumbnail.jpg" alt="" />
-                              <p class="title">Latest Work</p>
-                          </a>
-                      </div>
-                      <div class="slide">
-                          <a href="#galleryimage" data-lightbox="mlightboximage" class="link"
-                             data-src="img/02_preview.jpg" data-title="Solana" data-description="by abcgomel">
-                              <img src="img/02_thumbnail.jpg" alt="" />
-                              <p class="title">Latest Work</p>
-                          </a>
-                      </div>
-                      <div class="slide">
-                          <a href="#galleryimage" data-lightbox="mlightboximage" class="link"
-                             data-src="img/03_preview.jpg" data-title="Top of the world" data-description="Amazing photomanipulation">
-                              <img src="img/03_thumbnail.jpg" alt="" />
-                              <p class="title">Latest Work</p>
-                          </a>
-                      </div>
-                  </div>
-
-                  <div class="tile title-fade icon-featureccw w2 h1">
-                      <a class="link" target="_blank" href="http://codecanyon.net/user/AlexGrozav?ref=AlexGrozav">
-                          <div class="text">
-                              <p class="text-medium">
-                                  View More
-                              </p>
-                              <p>
-                                  Quality stuff from us
-                              </p>
-                          </div>
-                          <p class="sub">2</p>
-                          <p class="title"><i class="fa fa-arrow-right fa-2x"></i></p>
-                      </a>
-                  </div>
-
-                  <div class="tile red imagetile tileshow w2 h1">
-                      <div class="slide active">
-                          <div class="caption red">
-                              <a class="link" href="blog/post-1.html">
-                                  <div class="title"><i class="fa fa-file-text fa-2x"></i></div>
-                                  <div class="caption-text twoline">
-                                      Strapslide is the new big thing in Bootstrap Development!
-                                  </div>
-                              </a>
-                          </div>
-                          <img src="img/blogpost-1.jpg" alt="" />
-                      </div>
-                      <div class="slide">
-                          <div class="caption red">
-                              <a class="link" href="blog/post-2.html">
-                                  <div class="title"><i class="fa fa-file-text  fa-2x"></i></div>
-                                  <div class="caption-text">
-                                      You'll simply love Metromega
-                                  </div>
-                              </a>
-                          </div>
-                          <img src="img/blogpost-2.jpg" alt="" />
-                      </div>
-                      <div class="slide">
-                          <div class="caption red">
-                              <a class="link" href="blog/post-3.html">
-                                  <div class="title"><i class="fa fa-file-text fa-2x"></i></div>
-                                  <div class="caption-text">
-                                      The most amazing Metro UI
-                                  </div>
-                              </a>
-                          </div>
-                          <img src="img/blogpost-3.jpg" alt="" />
-                      </div>
-                  </div>
-
-                  <div class="tile turquoise icon-fadeoutscaleup title-fade w1 h1">
-                      <a class="link" data-scroll="scrollto"  href="#articles">
-                          <i class="fa fa-file-text"></i>
-                          <p class="title">Blog</p>
-                      </a>
-                  </div>
-                  <!-- /SECTION TILES -->
-
-              </section>
-              <!-- /SECTION -->
-
-          </section>
-          <!-- /MAIN CONTENT SECTION -->
-          {{> footer}}
-
+<template name="navBar">
+  <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Home</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="nav navbar-nav">
+          <li><a href="/">News Feed</a></li>
+          <li><a href="/Memories">My Memories</a></li>
+          <li><a href="/Profile">My Profile</a></li>
+          <li class="pull-right"><a>{{> loginButtons}}</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <hr>
+  <br><br>
 </template>
